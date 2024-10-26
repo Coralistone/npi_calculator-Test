@@ -10,15 +10,15 @@ Ce projet est une calculatrice en notation polonaise inverse (NPI). Il inclut un
 
 
 ## Table des Matières 
-1. [Prérequis](#prérequis)
-2. [Fonctionnalités](##Fonctionnalités)
-3. [Installation et Configuration](#installation)
-4. [Utilisation](#utilisation)
-5. [Tests](#tests)
-6. [Déploiement](#déploiement)
-7. [Contributions](#contributions)
-8. [Ressources et Références](#ressources-et-références)
-9. [Auteurs](#auteurs)
+1. [Prérequis]
+2. [Fonctionnalités]
+3. [Installation et Configuration]
+4. [Utilisation]
+5. [Tests]
+6. [Déploiement]
+7. [Contributions]
+8. [Ressources et Références]
+9. [Auteurs]
 
 
 ---
@@ -35,8 +35,8 @@ Ce projet est une calculatrice en notation polonaise inverse (NPI). Il inclut un
 - Calcul de l’expression en NPI avec validation d’entrée.
 -  Affichage d’un message de félicitations si la réponse est correcte, et un message d’erreur sinon.
 -  Design inspiré d’une vraie calculatrice avec des éléments visuels amusants (émoticônes de réussite/échec).
--  Intégration d’une API REST avec FastAPI.
-Conteneurisation avec Docker pour une exécution facile.
+-  Intégration d’une API REST avec FastAPI pour gérer les calculs.
+-  Conteneurisation avec Docker pour pour simplifier le déploiement.
 
 
 ---
@@ -46,7 +46,7 @@ Conteneurisation avec Docker pour une exécution facile.
 ### Clonez le dépôt et accédez au répertoire :
 
 ```bash 
-git clone https://github.com/votre-utilisateur/npi_calculator.git
+git clone https://github.com/Coralistone/npi_calculator-Test.git
 cd npi_calculator
 ``` 
 ### Configuration des Variables d’Environnement 
@@ -83,16 +83,18 @@ npm start
 ```
 2. Utiliser la calculatrice 
 Rendez-vous sur <http://localhost:3000> pour utiliser la calculatrice.
+
 ### Exemple d’Expression NPI
 Pour calculer l'expression 12 3 * 4 +, saisissez cette expression dans le champ de saisie, puis appuyez sur le bouton Calculer.
 
 --- 
 
 ## 5. Tests
-Les tests du backend peuvent être écrits avec pytest.
+Les tests du backend sont écrits avec pytest.
 
 ## 6. Déploiement
 Pour déployer l’application avec Docker, suivez ces étapes :
+
 ### Build et Démarrage des Conteneurs
 Depuis la racine du projet, lancez la commande suivante: 
 ```bash 
@@ -111,12 +113,12 @@ Les contributions sont les bienvenues ! Pour contribuer:
 - Ouvrez une Pull Request.
 - 
 ## 8. Ressources et Références
-- FastAPI Documentation
-- React Documentation
-- Docker Documentation
+- FastAPI Documentation (<https://fastapi.tiangolo.com/>)
+- React Documentation (<https://react.dev/>)
+- Docker Documentation (<https://docs.docker.com/>)
 
 ## 9. Auteurs
-Coralistone METSA - Développeur principal - Mon git
+Coralistone METSA - Développeur principal - [Mon git](<https://github.com/Coralistone)>
 
 
 
