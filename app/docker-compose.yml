@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Mikam_99
+      - POSTGRES_DB=npi_calculator
+    ports:
+      - "5432:5432"  # mappe le port 5432 du conteneur à l'hôte
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build:
+      context: .
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:Mikam_99@db/npi_calculator
+    ports:
+      - "8000:8000"  # mappe le port 8000 de l'application à l'hôte
+    depends_on:
+      - db  # assure que `app` attend `db` avant de démarrer
+
+volumes:
+  postgres_data:
